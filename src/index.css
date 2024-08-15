@@ -66,4 +66,15 @@
   body {
     @apply bg-primary font-sans font-semibold text-white leading-loose;
   }
+  .h1{
+    @apply text-[48px] xl:text-[80px] leading-[1.1] font-mono;
+  }
+  
+  .h2{
+    @apply text-[36px] xl:text-[48px] leading-[1.1] font-mono;
+  }
+  
+  .h3{
+    @apply text-[23px] xl:text-[36px] leading-[1.1] font-mono;
+  }
 }
