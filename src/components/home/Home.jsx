@@ -45,7 +45,14 @@ function Home() {
 
   return (
     <>
-      <section className="h-full">
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 1,
+          transition: { delay: 1.4, duration: 0.4, ease: "easeInOut" },
+        }}
+        className="h-full"
+      >
         <div className="container mx-auto h-full">
           <div className="flex flex-col xl:flex-row justify-between items-center xl:pt-8 xl:pb-24">
             {/** text */}
@@ -104,7 +111,7 @@ function Home() {
           </div>
         </div>
         <Stats />
-      </section>
+      </motion.section>
     </>
   );
 }

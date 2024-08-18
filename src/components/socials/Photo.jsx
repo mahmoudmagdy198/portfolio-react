@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import profile from "../../profilebg.png";
+import profile from "../../profile.jpg";
 
 function Photo() {
   return (
@@ -13,7 +13,7 @@ function Photo() {
             transition: {
               delay: 2,
               duration: 0.4,
-              ease: "easeIn",
+              ease: "easeInOut",
             },
           }}
         >
@@ -27,9 +27,9 @@ function Photo() {
                 ease: "easeInOut",
               },
             }}
-            className="w-[400px] h-[400px] xl:w-[498] xl:h-[498px] mix-blend-luminosity absolute"
+            className="w-[295px] h-[295px] xl:w-[500px] xl:h-[500px] mix-blend-luminosity absolute"
           >
-            <img src={""} alt="" className="object-contain" />
+            <img src={profile} alt="" className="object-contain" />
           </motion.div>
 
           {/**circle */}
