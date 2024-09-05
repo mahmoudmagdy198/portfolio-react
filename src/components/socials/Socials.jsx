@@ -6,18 +6,23 @@ function Socials({ containerStyle, iconStyle }) {
   const links = [
     {
       icon: <FaLinkedinIn />,
-      path: "",
+      path: "https://www.linkedin.com/in/mahmoud-desoki-b60082234/",
     },
     {
       icon: <FaGithub />,
-      path: "",
+      path: "https://github.com/mahmoudmagdy198",
     },
   ];
   return (
     <>
       <div className={containerStyle}>
         {links.map((link, index) => (
-          <Link key={index} to={link.path} className={iconStyle}>
+          <Link
+            target="_blank"
+            key={index}
+            to={link.path}
+            className={iconStyle}
+          >
             {link.icon}
           </Link>
         ))}

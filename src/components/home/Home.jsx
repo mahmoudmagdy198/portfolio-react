@@ -88,14 +88,17 @@ function Home() {
               </p>
               {/** btns and socials */}
               <div className="flex flex-col xl:flex-row items-center gap-8">
-                <Button
-                  variant="cv"
-                  size="lg"
-                  className="flex gap-2 items-center"
-                >
-                  <span>Download CV</span>
-                  <FaDownload />
-                </Button>
+                <a href="/MahmoudDesokiCV.pdf" download="Mahmoud Desoki CV">
+                  <Button
+                    variant="cv"
+                    size="lg"
+                    className="flex gap-2 items-center"
+                  >
+                    <span>Download CV</span>
+                    <FaDownload />
+                  </Button>
+                </a>
+
                 <div className="mb-8 xl:mb-0">
                   <Socials
                     containerStyle="flex gap-6"

@@ -20,8 +20,8 @@ function Projects() {
       title: "PJ 1",
       decription: "Movies-react searching movies and know what's new",
       stack: [{ name: "react" }, { name: "redux" }, { name: "bootstrap" }],
-      image: "",
-      github: "",
+      image: "/pj1.jpg",
+      github: "https://github.com/mahmoudmagdy198/movie-react-app",
     },
     {
       num: "02",
@@ -29,8 +29,17 @@ function Projects() {
       title: "PJ 2",
       decription: "NetFlix clone",
       stack: [{ name: "html" }, { name: "css" }],
-      image: "",
-      github: "",
+      image: "/pj2.jpg",
+      github: "https://github.com/mahmoudmagdy198/netflix_clone",
+    },
+    {
+      num: "03",
+      category: "frontend",
+      title: "PJ 3",
+      decription: "Portfolio site",
+      stack: [{ name: "react" }, { name: "tailwind" }, { name: "shadcn" }],
+      image: "pj3.png",
+      github: "https://github.com/mahmoudmagdy198/portfolio-react",
     },
   ];
 
@@ -71,7 +80,7 @@ function Projects() {
                 </ul>
                 <div className="border border-gray-700/50"></div>
                 <div>
-                  <Link to={project.github}>
+                  <Link to={project.github} target="_blank">
                     <TooltipProvider delayDuration={100}>
                       <Tooltip>
                         <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-zinc-700 flex items-center justify-center group">
@@ -98,7 +107,7 @@ function Projects() {
                     <div className="h-[480px] relative group flex justify-center items-center bg-white/50">
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                       <div className="relative w-full h-full">
-                        <img src="" alt="" className="object-cover" />
+                        <img src={e.image} alt="" className="object-cover" />
                       </div>
                     </div>
                   </SwiperSlide>
